@@ -1,0 +1,170 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftcontainer{
+    display: flex;
+    flex-direction: column;
+    background-image: url("background.avif");
+    width: clamp(35vw,40vw,45vw);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(147, 143, 121, 0.67);
+    position: relative;
+    bottom: 10vh;
+    align-items: center;
+    width: 100%;
+}
+
+.credits{
+    color: #a6a6a6;
+    position: relative;
+    top: 40vh;
+}
+
+.logo>img{
+    max-width:80px;
+}
+
+@font-face {
+    font-family: "customfont";
+    src:
+    url("Norse-Bold.otf") format('opentype');
+}
+
+.odinfont{
+    font-family: "customfont";
+    font-size: 80px;
+    position: relative;
+    top: 10px;
+    color: whitesmoke;
+}
+
+input, label{
+    display: block;
+}
+
+input{
+    width:150%;
+}
+
+input:focus{
+    border-color: blue;
+    box-shadow:#a6a6a6;
+}
+
+#password:invalid{
+    border-color: red;
+}
+
+#confirmpassword:invalid{
+    border-color: red;
+}
+
+.middle{
+    border: 1px solid rgba(206, 200, 200, 0.552); 
+    box-shadow: 2px 2px 2px rgba(149, 145, 145, 0.4);
+    min-height: 25%;
+    min-width: 100%;
+}
+
+.middletext{
+    font-size: 35px;
+}
+
+.rightcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.header{
+    padding-left: 30px;
+}
+
+.middletext{
+    padding-left:30px;
+    padding-top: 10px;
+}
+
+#createaccount{
+  background-color: #596D48;
+  border: 1px solid #596D48;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 40px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 20px;
+  box-shadow: rgba(81, 81, 81, 0.5) 0 10px 10px 0;
+}
+
+#createaccount:hover {
+  box-shadow: rgba(45, 45, 45, 0.5) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
+
+.footer{
+    position: relative;
+    top: 40px;
+    left: 30px
+}
+
+form{
+    margin-left: 30px;
+    width: 100%;
+    display: inline-block;
+}
+
+.desc1, .desc2{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:700;
+}
+
+.desc1{
+    position:relative;
+    bottom:155px;
+}
+
+.desc2{
+    position:relative;
+    bottom:100px;
+}
+
+form>div{
+    padding-top: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    color:#4d6e31;
+    border-bottom-style: none;
+}

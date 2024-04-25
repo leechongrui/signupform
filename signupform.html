@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div class="leftcontainer">
+        <div class="logo">
+            <img src="odin.png" alt="odin.png">
+            <div class="odinfont">ODIN</div> 
+        </div>
+        <div class="credits">Photo by whoever it is...</div>
+    </div>
+    <div class="rightcontainer">
+        <div class="header">
+            <div class="desc1">Welcome to the club! Sign up now to get started on your web developement journey!</div>
+            <div class="desc2">Get started - it's free. No credit card needed.</div>
+        </div>
+        <div class="middle">
+            <div class="middletext">Let's do this!</div>
+            <form action="www.google.com" method="post">
+                
+                <div style="float:left;margin-right:100px;">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname">
+                </div>
+                
+                <div style="float:left;">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname">
+                </div>
+                <br style="clear:both;" />
+                
+                <div style="float:left;margin-right:100px;">
+                <label for="email" >Email</label>
+                <input type="email" id="email" name="email" placeholder="yourname@gmail.com">
+                </div>
+               
+                <div style="float:left;">
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" id="phonenumber" name="phonenumber" placeholder="912345678">
+                </div>
+                <br style="clear:both;" />
+
+                <div style="float:left;margin-right:100px;">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="********">
+                </div>
+                
+                <div style="float:left;">
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" id="confirmpassword" required name="confirmpassword" placeholder="********">
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <button id="createaccount" onclick= passwordCheck() >Create Account</button>
+            <div class="footertext">Already have an account? 
+                <a href="www.google.com">Log In</a>
+            </div>
+        </div>
+    </div>
+    <srcipt src="script.js"></srcipt>
+</body>
+</html>
